@@ -5,7 +5,6 @@ For this project, you are a DevOps engineer who will be collaborating with a tea
 
 ## Getting Started
 
-
 ### Dependencies
 #### Local Environment
 1. Python Environment - run Python 3.6+ applications and install Python dependencies via `pip`

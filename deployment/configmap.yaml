@@ -14,4 +14,4 @@ metadata:
   name: db-secret
 type: Opaque
 data:
-    DB_PASSWORD: <OUTPUT OF `echo -n 'the password' | base64`>
+    DB_PASSWORD: "63pZQd8RiO"

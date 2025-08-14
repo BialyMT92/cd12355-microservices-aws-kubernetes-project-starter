@@ -44,6 +44,13 @@ spec:
             port: 5153
           initialDelaySeconds: 5
           timeoutSeconds: 5
+        resources:
+          limits:
+            cpu: 350m
+            memory: 500Mi
+          requests:
+            cpu: 250m
+            memory: 350Mi 
         envFrom:
         - configMapRef:
             name: db-env

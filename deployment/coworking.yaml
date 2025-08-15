@@ -28,9 +28,13 @@ spec:
       labels:
         service: coworking
     spec:
+      tolerations:
+      - key: "CriticalAddonsOnly"
+        operator: "Exists"
+        effect: "NoSchedule"
       containers:
       - name: coworking
-        image: 551171828931.dkr.ecr.eu-north-1.amazonaws.com/coworking-checkin:latest
+        image: 551171828931.dkr.ecr.eu-north-1.amazonaws.com/coworking-checkin:8
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:

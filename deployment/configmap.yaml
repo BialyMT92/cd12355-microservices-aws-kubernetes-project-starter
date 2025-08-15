@@ -7,6 +7,8 @@ data:
   DB_NAME: "postgres"
   DB_HOST: "postgres"
   DB_PORT: "5432"
+  POSTGRES_USER: "postgres"
+  POSTGRES_DB: "postgres"
 ---
 apiVersion: v1
 kind: Secret
@@ -14,4 +16,5 @@ metadata:
   name: db-secret
 type: Opaque
 data:
-    DB_PASSWORD: "63pZQd8RiO"
+    DB_PASSWORD: NjNwWkFkOFJpTw==
+    POSTGRES_PASSWORD: NjNwWkFkOFJpTw==
